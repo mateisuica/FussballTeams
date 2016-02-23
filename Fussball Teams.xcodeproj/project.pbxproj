@@ -13,6 +13,14 @@
 		A1F2A9E81C7C853600B29319 /* Fussball_Teams.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1F2A9E61C7C853600B29319 /* Fussball_Teams.xcdatamodeld */; };
 		A1F2A9EA1C7C853600B29319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F2A9E91C7C853600B29319 /* Assets.xcassets */; };
 		A1F2A9ED1C7C853600B29319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F2A9EB1C7C853600B29319 /* LaunchScreen.storyboard */; };
+		A1F2A9F51C7C858000B29319 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F2A9F41C7C858000B29319 /* GameKit.framework */; };
+		A1F2A9F71C7C8C8400B29319 /* PlayerDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2A9F61C7C8C8400B29319 /* PlayerDetailsController.swift */; };
+		A1F2A9F91C7C8F5800B29319 /* PlayersListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2A9F81C7C8F5800B29319 /* PlayersListController.swift */; };
+		A1F2A9FB1C7C93CD00B29319 /* PlayerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2A9FA1C7C93CD00B29319 /* PlayerTableCell.swift */; };
+		A1F2A9FD1C7C9A5C00B29319 /* StartGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2A9FC1C7C9A5C00B29319 /* StartGameController.swift */; };
+		A1F2A9FF1C7CA64700B29319 /* GameDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2A9FE1C7CA64700B29319 /* GameDetailsController.swift */; };
+		A1F2AA011C7CA6A000B29319 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2AA001C7CA6A000B29319 /* Game.swift */; };
+		A1F2AA031C7CA6CF00B29319 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F2AA021C7CA6CF00B29319 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		A1F2A9E91C7C853600B29319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F2A9EC1C7C853600B29319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1F2A9EE1C7C853600B29319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1F2A9F41C7C858000B29319 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		A1F2A9F61C7C8C8400B29319 /* PlayerDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsController.swift; sourceTree = "<group>"; };
+		A1F2A9F81C7C8F5800B29319 /* PlayersListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersListController.swift; sourceTree = "<group>"; };
+		A1F2A9FA1C7C93CD00B29319 /* PlayerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableCell.swift; sourceTree = "<group>"; };
+		A1F2A9FC1C7C9A5C00B29319 /* StartGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameController.swift; sourceTree = "<group>"; };
+		A1F2A9FE1C7CA64700B29319 /* GameDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailsController.swift; sourceTree = "<group>"; };
+		A1F2AA001C7CA6A000B29319 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A1F2AA021C7CA6CF00B29319 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F2A9F51C7C858000B29319 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,7 @@
 		A1F2A9D31C7C853600B29319 = {
 			isa = PBXGroup;
 			children = (
+				A1F2A9F41C7C858000B29319 /* GameKit.framework */,
 				A1F2A9DE1C7C853600B29319 /* Fussball Teams */,
 				A1F2A9DD1C7C853600B29319 /* Products */,
 			);
@@ -57,12 +75,19 @@
 			isa = PBXGroup;
 			children = (
 				A1F2A9DF1C7C853600B29319 /* AppDelegate.swift */,
+				A1F2A9FA1C7C93CD00B29319 /* PlayerTableCell.swift */,
+				A1F2A9FC1C7C9A5C00B29319 /* StartGameController.swift */,
+				A1F2A9F81C7C8F5800B29319 /* PlayersListController.swift */,
+				A1F2A9FE1C7CA64700B29319 /* GameDetailsController.swift */,
+				A1F2AA001C7CA6A000B29319 /* Game.swift */,
+				A1F2AA021C7CA6CF00B29319 /* Player.swift */,
 				A1F2A9E11C7C853600B29319 /* ViewController.swift */,
 				A1F2A9E31C7C853600B29319 /* Main.storyboard */,
 				A1F2A9E91C7C853600B29319 /* Assets.xcassets */,
 				A1F2A9EB1C7C853600B29319 /* LaunchScreen.storyboard */,
 				A1F2A9EE1C7C853600B29319 /* Info.plist */,
 				A1F2A9E61C7C853600B29319 /* Fussball_Teams.xcdatamodeld */,
+				A1F2A9F61C7C8C8400B29319 /* PlayerDetailsController.swift */,
 			);
 			path = "Fussball Teams";
 			sourceTree = "<group>";
@@ -99,6 +124,15 @@
 				TargetAttributes = {
 					A1F2A9DB1C7C853600B29319 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J5JX55X23V;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -138,9 +172,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F2A9FD1C7C9A5C00B29319 /* StartGameController.swift in Sources */,
+				A1F2AA011C7CA6A000B29319 /* Game.swift in Sources */,
 				A1F2A9E21C7C853600B29319 /* ViewController.swift in Sources */,
+				A1F2A9FF1C7CA64700B29319 /* GameDetailsController.swift in Sources */,
 				A1F2A9E01C7C853600B29319 /* AppDelegate.swift in Sources */,
 				A1F2A9E81C7C853600B29319 /* Fussball_Teams.xcdatamodeld in Sources */,
+				A1F2A9F71C7C8C8400B29319 /* PlayerDetailsController.swift in Sources */,
+				A1F2A9F91C7C8F5800B29319 /* PlayersListController.swift in Sources */,
+				A1F2AA031C7CA6CF00B29319 /* Player.swift in Sources */,
+				A1F2A9FB1C7C93CD00B29319 /* PlayerTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,10 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Fussball Teams/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wirtek.Fussball-Teams";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wirtek.FussballTeams;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -264,10 +308,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Fussball Teams/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wirtek.Fussball-Teams";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wirtek.FussballTeams;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

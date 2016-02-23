@@ -6,4 +6,10 @@
 //  Copyright © 2016 Wirtek. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+class PlayerTableCell : UITableViewCell {
+    
+    @IBOutlet weak var playerNameLabel: UILabel!
+}

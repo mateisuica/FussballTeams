@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+
+class Game {
+    
+    var players : [Player] = []
+    var is2vs2 : Bool = false
+    
+}

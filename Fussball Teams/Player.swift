@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+class Player {
+    var name : String?
+    var id : Int?
+}
